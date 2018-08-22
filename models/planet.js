@@ -5,7 +5,7 @@ let schemaName = 'Planet'
 
 let schema = new Schema({
   name: { type: String, required: true },
-  description: { type: String, default: 'Whats up with not describing your stuff?' },
+  description: { type: String, default: 'A celestial body moving in an elliptical orbit around a star.' },
   starId: { type: ObjectId, ref: 'Star', required: true }
 })
 
